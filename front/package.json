@@ -1,0 +1,37 @@
+{
+  "name": "workadventurefront",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "SEE LICENSE IN LICENSE.txt",
+  "devDependencies": {
+    "@types/jasmine": "^3.5.10",
+    "@typescript-eslint/eslint-plugin": "^2.26.0",
+    "@typescript-eslint/parser": "^2.26.0",
+    "eslint": "^6.8.0",
+    "html-webpack-plugin": "^4.3.0",
+    "jasmine": "^3.5.0",
+    "ts-loader": "^6.2.2",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.8.3",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3",
+    "webpack-merge": "^4.2.2"
+  },
+  "dependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/simple-peer": "^9.6.0",
+    "@types/socket.io-client": "^1.4.32",
+    "phaser": "^3.22.0",
+    "queue-typescript": "^1.0.1",
+    "simple-peer": "^9.6.2",
+    "socket.io-client": "^2.3.0"
+  },
+  "scripts": {
+    "start": "webpack-dev-server --open",
+    "build": "webpack --config webpack.prod.js",
+    "test": "ts-node node_modules/jasmine/bin/jasmine --config=jasmine.json",
+    "lint": "node_modules/.bin/eslint src/ . --ext .ts",
+    "fix": "node_modules/.bin/eslint --fix src/ . --ext .ts"
+  }
+}
